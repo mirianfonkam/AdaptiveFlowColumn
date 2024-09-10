@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KDS Compose"
+rootProject.name = "Custom Flow Column"
 include ':app'

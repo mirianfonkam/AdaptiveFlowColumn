@@ -1,4 +1,4 @@
-package com.example.kdscompose.ui.theme
+package com.example.customflowcolumn.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -33,7 +33,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun KDSComposeTheme(
+fun CustomFlowColumnTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.kdscompose'
+    namespace 'com.example.customflowcolumn'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.kdscompose"
+        applicationId "com.example.customflowcolumn"
         minSdk 27
         targetSdk 34
         versionCode 1
@@ -49,7 +49,6 @@ android {
 dependencies {
 
     implementation(libs.androidx.foundation.layout)
-
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx
     implementation libs.androidx.activity.compose
