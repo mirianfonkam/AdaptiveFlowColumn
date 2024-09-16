@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -14,8 +13,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.layout.LazyLayout
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreVert
@@ -67,12 +64,11 @@ class MainActivity : ComponentActivity() {
 
                     )
                     //CustomContextFlowColumn(composableItems, scrollState, maxWidthOfColumn)
-//                    CustomLazyFlowColumn(
-//                        modifier = Modifier.fillMaxSize(),
-//                        maxWidthOfColumn = maxWidthOfColumn,
-//                        maxHeight = screenHeight
-//                    )
-
+                    CustomContextFlowColumn(
+                        maxWidthOfColumn = maxWidthOfColumn,
+                        composableItems = composableItems,
+                        scrollState = scrollState,
+                    )
                 }
             }
         }

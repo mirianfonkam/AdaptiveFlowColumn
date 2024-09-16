@@ -164,15 +164,3 @@ fun CustomContextFlowColumn(
         }
     }
 }
-
-data class GridColumn(
-    val index: Int,
-    var availableHeight: Int,
-    val listOfItems: MutableList<ColumnItem> = mutableListOf()
-)
-
-data class ColumnItem(
-    val orderItemGuid: String,
-    val indexInColumn: Int,
-    val height: Int,
-)
